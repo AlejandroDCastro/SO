@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.eps.myapplication.MainActivity"
+    android:touchscreenBlocksFocus="false"
+    android:contextClickable="false"
+    android:clickable="true"
+    android:background="#87a8d9">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/FrameLayout1"
+        android:background="#93bc93"
+        android:layout_marginBottom="331dp"></FrameLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#d9dbdc"
+        android:text="NUM A"
+        android:id="@+id/textView1"
+        android:textSize="22dp"
+        android:textColor="#000"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numA"
+        android:inputType="number"
+        android:textColor="#2331cf"
+        android:textStyle="italic"
+        android:layout_toRightOf="@id/textView1"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="15dp"
+        android:maxLength="8"
+        android:hint="      Nºbinario"
+        android:textColorHint="#e9ad68"
+        android:background="#d9dbdc"
+        android:textSize="22dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Datos a introducir"
+        android:textColor="#000"
+        android:textSize="19dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#d9dbdc"
+        android:text="NUM B"
+        android:id="@+id/textView2"
+        android:textSize="22dp"
+        android:textColor="#000"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="90dp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/numB"
+        android:hint="      Nºbinario"
+        android:textSize="22dp"
+        android:textColor="#2331cf"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_marginTop="90dp"
+        android:maxLength="8"
+        android:inputType="number"
+        android:background="#d9dbdc"
+        android:textStyle="italic"
+        android:textColorHint="#e9ad68"/>
+    <FrameLayout
+        android:id="@+id/FrameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/numB"
+        android:layout_marginTop="51dp"
+        android:layout_above="@+id/Resultado"
+        android:layout_marginBottom="130dp"
+        android:background="#93bc93"></FrameLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Operaciones aritméticas"
+        android:textColor="#000"
+        android:textSize="19dp"
+        android:layout_below="@id/numB"
+        android:layout_marginTop="50dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/botonSuma"
+        android:text="SUMA"
+        android:layout_below="@id/numB"
+        android:layout_marginTop="97dp"
+        android:layout_marginLeft="68dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/botonMult"
+        android:text="MULT."
+        android:layout_below="@id/botonSuma"
+        android:layout_marginLeft="68dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/botonResta"
+        android:text="RESTA"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/numB"
+        android:layout_marginTop="97dp"
+        android:layout_marginRight="68dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/botonDivide"
+        android:text="DIVIDE"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/botonResta"
+        android:layout_marginRight="68dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado "
+        android:id="@+id/Resultado"
+        android:singleLine="false"
+        android:textColor="#000"
+        android:textSize="25dp"
+        android:layout_alignParentBottom="true"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sumaNumeros"
+        android:textSize="22dp"
+        android:textColor="#f22438"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/Resultado"/>
+    <FrameLayout
+        android:id="@+id/FrameLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/sumaNumeros"
+        android:layout_below="@id/botonMult"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="4dp"
+        android:background="#93bc93"></FrameLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/botonAND"
+        android:text="AND"
+        android:layout_above="@id/Resultado"
+        android:layout_marginBottom="27dp"
+        android:layout_marginLeft="32dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/botonOR"
+        android:text="OR"
+        android:layout_centerInParent="true"
+        android:layout_above="@id/Resultado"
+        android:layout_marginBottom="27dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/botonXOR"
+        android:text="XOR"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/Resultado"
+        android:layout_marginBottom="27dp"
+        android:layout_marginRight="32dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Operaciones lógicas"
+        android:textColor="#000"
+        android:textSize="19dp"
+        android:layout_below="@id/botonMult"
+        android:layout_marginTop="28dp"
+        />
+</RelativeLayout>
